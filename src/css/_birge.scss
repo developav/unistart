@@ -1,0 +1,171 @@
+.birge {
+    &__heading {
+        padding: 0 10px;
+        font-size: 62px;
+        color: #364670; 
+        margin-bottom: 30px;
+    }
+    &__group {
+        padding: 3px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 213px;
+        margin-bottom: 14px;
+       &-tab {
+        font-size: 16px;
+        padding: 10px;
+        text-decoration: none;
+        color: rgb(145, 16, 22);
+        font-weight: bold;
+        background-color: transparent;
+        border-radius: 15px;
+        &:hover {
+            color: rgba(145, 16, 22, 0.9); /* Уменьшение прозрачности на 10% */
+        }
+       }
+    }
+    &__search{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 15px;
+        &-input{
+            line-height: 30px;
+            width: 82%;
+            padding: 19px;
+            border-radius: 15px;
+            font-size: 18px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(166, 129, 68);
+            &:hover {
+
+                background-color: rgb(255, 255, 255, 0.9);
+                border: 1px solid rgb(166, 129, 68, 0.9);
+            }
+        }
+        &-button{
+            line-height: 30px;
+            width: 14.7%;
+            padding: 18px;
+            font-size: 20px;
+            border-radius: 15px;
+            background-color: rgb(145, 16, 22);
+            color: #fff;
+            transition: color 0.3s linear, background-color 0.3s linear;
+            &:hover {
+                cursor: pointer;
+                background-color: rgb(145, 16, 22, 0.9);
+                color: rgb(255, 255, 255, 0.9);
+            }
+        }
+        &-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-items: center;
+            max-width: 39%;
+            margin-bottom: 93px;
+            &-tab {
+                background-color: rgb(250, 248, 246);
+                color: rgb(54, 70, 112);
+                padding: 8px 18px;
+                font-size: 18px;
+               border-radius: 15px;
+               margin-bottom: 20px;
+               transition: color 0.3s linear, background-color 0.3s linear;
+               &:not(:last-child) {
+                margin-right: 20px;
+                
+               }
+               &:hover {
+                color: rgb(54, 70, 112, 0.9);
+                background-color: rgb(250, 248, 246, 0.9);
+               }
+            }
+        }
+    }
+    &__card-group-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        &-item {
+            display: flex;
+            flex-direction: column;
+            min-width: 23.5%;
+            transition: opacity 1s linear, color 1s linear;
+            &:hover {
+                cursor: pointer;
+                color: rgb(54, 70, 112, 0.9);
+                img{
+                    opacity: 0.9;
+                }
+                h3{
+                    color: rgb(54, 70, 112, 0.9);
+                }
+            }
+            &-image {
+                margin-bottom: 26px;
+                transition: opacity 0.3s linear;
+            }
+            &-heading {
+                color: rgb(54, 70, 112);
+                font-size: 23px;
+                transition:color 0.3s linear;
+            }
+        }
+       
+    }
+    @media (max-width: 593px)  {
+        .birge__heading {
+            font-size: 34px;
+        }
+        .birge__search {
+            flex-wrap: wrap;
+            &-button {
+                width: 100%;
+            }
+            &-input {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            &-links {
+                max-width: 100%;
+                &-tab {
+                    font-size: 16px;
+                }
+            }
+        }
+        .birge__card-group-list-item {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+      }
+}
+.resume__active {
+    border-radius: 15px;
+    padding: 10;
+    background-color: #911016;
+    color: #FFFFFF;
+    transition: all 0.3s linear;
+    &:hover {
+        color: rgba(255, 255, 255, 0.9); /* Уменьшение прозрачности на 10% */
+        background-color: rgba(145, 16, 22, 0.9);
+    }
+}
+.vacansi__active {
+    border-radius: 15px;
+    padding: 10;
+    background-color: #911016;
+    color: #FFFFFF;
+    transition: all 0.3s linear;
+    &:hover {
+        color: rgba(255, 255, 255, 0.9); /* Уменьшение прозрачности на 10% */
+        background-color: rgba(145, 16, 22, 0.9);
+    }
+}
