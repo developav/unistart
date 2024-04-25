@@ -2,7 +2,7 @@ export default [
     {
         id: 1,
         prof:'Копирайтер',
-        image: 'img/copy.png',
+        image: 'src/img/copy.png',
     },
     {
         id: 2,
